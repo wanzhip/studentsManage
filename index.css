@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.header {
+    height: 70px;
+    background-color: #664466;
+}
+
+.header .logo {
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 20px;
+    font-size: 14px;
+    color: yellow;
+}
+
+.header .logo img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.content {
+    height: calc(100% - 70px);
+}
+
+.content .left-menu {
+    width: 200px;
+    height: 100%;
+    background-color: #eeeeee;
+    font-size: 14px;
+    float: left;
+}
+
+.left-menu dt,
+.left-menu dd {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+}
+
+.left-menu dl dt {
+    padding-left: 8px;
+    font-weight: bold;
+}
+
+.left-menu dl dd {
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.left-menu dd:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #354457;
+}
+
+.left-menu dl dd.active {
+    background-color: #f40;
+    color: #fff;
+}
+
+
+/* 浮动定位 */
+
+
+/* .content .right-content { */
+
+
+/* 
+     position
+     display: inline-block; // 布局转换成流式布局  vertical-align: top;
+    */
+
+
+/* float: left; */
+
+
+/* min-width: 500px; */
+
+
+/* width: calc(100% - 200px);
+    height: 100%;
+    background-color: #fff;
+}  */
+
+
+/* position定位 */
+
+.content .right-content {
+    /* 
+     position
+     display: inline-block; // 布局转换成流式布局  vertical-align: top;
+     */
+    position: absolute;
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    height: 100%;
+}
+
+form {
+    width: 400px;
+    margin: 30px auto;
+    font-size: 16px;
+    /* text-align: center; */
+}
+
+form div {
+    margin: 10px 0;
+}
+
+form label {
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+form .btn {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.right-content>div {
+    display: none;
+}
+
+.right-content div.content-active {
+    display: block;
+}
+
+.right-content .student-list con content-active .search {
+    position: absolute;
+    right: 0;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+table thead {
+    background-color: #e3e8ee;
+    color: #646987;
+    height: 30px;
+}
+
+table tr {
+    height: 30px;
+}
+
+table tbody {
+    background-color: #fff;
+}
+
+table .btn {
+    padding: 3px 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+table .btn.edit {
+    background-color: #5cb85c;
+}
+
+table .btn.del {
+    background-color: #d9534f;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.modal .mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal .modal-content {
+    position: absolute;
+    padding: 20px;
+    left: calc(50% - 250px);
+    top: calc(50% - 250px);
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+}
+
+.turnpage {
+    text-align: center;
+}
+
+.turnpage button {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: #646987;
+    color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+}
